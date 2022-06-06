@@ -1,0 +1,274 @@
+/* vidoe button in the header */
+.videobtn{
+
+    background:red;
+    color:white;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+/* register button in the register form */
+.registerbtn{
+
+    cursor: pointer;
+}
+
+/* password vergeten button in the log in form */
+.pass_recover{
+
+    cursor: pointer;
+}
+
+/* login button in the header */
+.loginbtn{
+
+    background:red;
+    color:white;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* logout button in the header*/
+.logoutbtn{
+
+    background:red;
+    color:white;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* the admin button in the header */
+
+.adminbtn{
+
+    background:red;
+    color:white;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.btndiv{
+
+    text-align: right;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    top:10px;
+    
+}
+
+.headbar{
+
+    background: black;
+    height: 50px;
+    width: auto;
+}
+.headbar img{
+
+width: 130px;
+height: 50px;
+}
+ body{
+
+    background:rgb(15, 13, 13);
+    color:white;
+    margin:0;
+    padding:0;
+}
+
+
+.twobtns{
+padding-top: 10px;
+}
+
+/* login form */
+.lgnform{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+}
+
+.lgnform input {
+
+display:inline-block;
+
+}
+
+.lgnform label {
+
+    display:flex;
+    color:white;
+    }
+
+/*  register form */
+    .rgstrform{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+    }
+
+    .rgstrform input{
+
+        
+        display:flex;
+        
+
+    }
+    .rgstrform textarea{
+
+        
+        display:flex;
+        
+
+    }
+
+    .rgstrform label{
+
+        
+        display:flex;
+        color: white;
+
+    }
+
+    .passform{
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+    }
+
+    .passform input{
+        display:flex;
+
+    }
+
+    .passform label{
+
+        color:white;
+    }
+
+    /* movie section where it will be shown  */
+ 
+    .movie_container{
+        display: inline-block;
+        /* flex-wrap: wrap; */
+        position: relative;
+        /* bottom:-250px; */
+        padding:20px;
+    }
+    .movie_container>* {
+        flex: 1 1 100px;
+    }
+    .admin_container{
+
+        text-align: right;
+    }
+    .image{
+        width:150px; 
+        height:250px;
+        opacity: 1;
+  display: block;
+  
+  transition: .5s ease;
+  backface-visibility: hidden;
+    }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .text {
+        /* background-color: #04f187; */
+        color: rgb(8, 250, 117);
+        font-size: 20px;
+        padding: 16px 32px;
+      }
+
+      .movie_container:hover .image {
+        opacity: 0.3;
+      }
+      
+      .movie_container:hover .middle {
+        opacity: 1;
+      }
+ 
+      .vid_player {
+    height:100px;
+        margin-left: auto; 
+        margin-right: 0;
+        
+      }
+
+      .vid_player video{
+
+        float: right;
+        position: relative;
+        top: 0;
+        padding: 20px;
+        
+       
+      }
+      .vid_player img{
+opacity: 0.3;
+position: fixed;
+top:10px;
+object-fit: fill;
+width: 50rem;
+      }
+
+
+      .description{
+
+        display:flex;
+        flex-direction: column;
+        width: 30rem;
+        padding:20px;
+      }
+    
+       .container{
+           display:flex;
+       }
+
+       .footer{
+
+        position: absolute;
+        bottom:0;
+       }
+
+       .backgroundimage{
+           position:absolute;
+           width:100%;
+           height:100%;
+           background-size: cover;
+           background-repeat: no-repeat;
+
+           opacity: 0.2;
+           z-index: -100;
+           top:0;
+       }
